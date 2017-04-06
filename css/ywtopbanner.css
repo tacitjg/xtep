@@ -1,0 +1,106 @@
+body,ul,li,p,h1,h2,h3,h4,h5,dl,dd,dt{margin: 0;padding: 0;font-family: "微软雅黑";font-size: 13px;}
+ul,li,a{text-decoration: none;list-style: none;}
+a,img{vertical-align: middle;border: 0;}
+/*.x-wrap{width:1200px;margin: 0 auto;overflow: hidden;}*/
+.c-red{color: #c1121d;}
+.fl{float: left;}
+.fr{float: right;}
+/* 清除浮动 */
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom: 1;}
+/* .mt15{margin-top:15px} 
+.mb10{margin-bottom:10px} */
+@font-face {
+	/*font-family: Hiragino Sans GB;*/
+	/*ttf:o otf:t*/
+	/*src: url('../../fonts/Hiragino Sans GB W3.otf')format("truetype");*/
+	font-weight: normal;
+}
+
+
+.c-crumbs{margin:15px 0 10px}
+table{border-collapse: collapse;border-spacing: 0;}
+.banner{width: 100%;height: 482px;background-color: #4b4b4b;padding-top: 12px;}
+.x-header{line-height:40px;color: #6c6c6c;font-size: 12px;position: relative;background: #f2f2f2;}
+.x-header .header-adv{position: absolute;left: 0;width: 100%;}
+.x-header .header-adv img{height:40px;width:100%;}
+.x-header a.x-reg{color:#6c6c6c;}
+.x-header .x-login{color:#c1121d;margin-left: 5px;margin-right: 5px;}
+.c-wrap{margin: 0 auto;width:1200px;}
+.topNav{position:relative; z-index:1; height: 30px; line-height:30px;font-size:13px;font-family: "宋体";}
+.topNav-width{ width:1200px; margin:0 auto;}
+.topNav h3{ font-weight:normal; font-size:100%; }
+.topNav dl{ zoom:1; }
+.topNav .iqr {padding: 0px 0px;}
+.topNav .tnLeft{ float:left;  }
+.topNav .tnRight{ float:right;  }
+.topNav dd{ float:left; position:relative;}
+.topNav dd h3{ float:left;  }
+.topNav dd h3 a{ display:inline-block; *display:inline; zoom:1; height:14px; line-height:14px; padding:8px 20px;color: #656565;font-size: 12px;}
+.topNav dd h3 a i{ display:inline-block; width: 15px; height:15px; margin:0 0 0 5px; overflow:hidden; vertical-align:middle; font-size:12px; line-height:13px;background:url(../images/cart-icon.png) no-repeat;   }
+.topNav dd h3 a i.my-mobile{background-position:-246px -604px;}
+.topNav dd h3 a i.my-icon{background-position:-244px -577px;}
+.topNav dd h3 a i.my-cart{background-position:-245px -637px;}
+    
+.topNav dd h3 a:hover,
+.topNav dd.on h3 a{ background:#EDEEF0; color:#c1121d;    }
+.topNav dd h3 a:hover i.my-icon,.topNav dd h3 a:hover i.my-icon,.topNav dd h3 a:hover i.my-cart{background-position:-224px -577px;}
+.topNav .welcome{ padding-right:15px; color:#656565;   }
+.topNav .welcome a{  color:#656565;   }
+
+.topNav dd ul{ display:none; /*默认隐藏*/ position:absolute; top:30px; left:0;  border:0px solid #ddd; border-top:0;  background:#fff; 
+	-moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .1); -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .1); box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+	z-index: 1000;
+}
+.topNav dd ul li{ line-height: 31px;min-width: 110px;text-align: center;position: relative; z-index: 1000;}
+.topNav dd ul li a{ display: block; color: #333; padding: 0 15px; font-size: 12px; }
+.topNav dd ul li a i{background-color:#aa0108;font-style:normal;color:#fff;text-align:center;font-size:10px;position: absolute;right:10px;top:10px;width: 15px;height: 15px;border-radius: 50%;line-height: 15px;display: inline-block;}
+.topNav .tnRight h3 .shopcar{background: url(../../resoucre/images/shopcar.png);width: 15px;height: 13px;position: absolute;top: 9px;}
+.topNav .tnRight h3 b{background: url(../images/list.png);color:#fff;text-align:center;font-size:10px;width: 15px;height: 15px;line-height: 15px;position: absolute;left: 3px;display: block;}
+.tnRight dd ul{
+	/*z-index: 2;*/
+	/*position:relative;*/
+}
+.topNav dd:nth-child(1):hover b{display: none;}
+.topNav dd ul li a:hover{ background:#fff; color:#c1121d;    }
+.topNav dd ul li a span{ color:#656565; margin-left:5px; background: #fafafa;  }
+.top-ad{width:100%;text-align:center;background: #fff; }
+.h-adv-img{width: 100%;overflow:hidden;height: 70px;}
+
+.adv-scroll{ width:210px; overflow:hidden;margin:5px 0 0 100px;float: right;}
+.adv-scroll .hd{ height:15px; overflow:hidden; z-index:1; }
+.adv-scroll .hd ul{ overflow:hidden; zoom:1;text-align: center; }
+.adv-scroll .hd ul li{display: inline-block; margin-right:2px;  width:20px; height:5px; background:#ebebeb; cursor:pointer; margin-bottom: 5px;}
+.adv-scroll .hd ul li.on{ background:#adadad; color:#fff; }
+.adv-scroll .bd{ position:relative; height:100%; z-index:0;border:0;}
+.adv-scroll .bd li{ zoom:1; vertical-align:middle;}
+.adv-scroll .bd img{ width:210px; height:65px;display:block;}
+/*尾部*/
+.com-footer{background-color: #fff;overflow: hidden;margin-top: 50px;padding:30px 0 50px;color: #848484;}
+.com-footer dl{display: inline-block;margin: 0;width: 900px;border-right:1px dashed #ddd;overflow: hidden;float: left;padding-left: 20px;}
+.com-footer dl dd{display: inline-block;float: left;width:215px;}
+.com-footer dl dd b{display: block;font-size: 14px;margin-bottom: 5px;color: #575757;}
+.com-footer dl dd span{color: #7a7a7a;display: block;margin: 3px 0;color: #848484;}
+.com-footer dl dd span a{ color: #848484;}
+.com-footer .x-kf{float: left;width: 200px;margin:8px 0 0 50px;}
+.com-footer .x-kf h3{width: 200px;font-size:22px;color: #c1111c;}
+.com-footer .x-kf p{width: 200px;font-size:16px;margin:15px 0;}
+.com-footer .x-kf a{display: block;width: 122px;height: 32px;background: url(../images/zxkf1.png) no-repeat;background-size:100%}
+.com-footer .x-kf a:hover{background: url(../images/zxkf2.png) no-repeat;background-size:100%}
+
+.com-footer .footer-server{overflow: hidden;padding-bottom:30px;}
+.com-footer .footer-img{background-color: #1a1d1f; text-align: center;position: relative;}
+.com-footer .footer-msg{width: 100%;overflow:hidden;text-align: center;font-size: 12px;border-bottom: 1px solid #ededed;padding:30px 0;}
+.com-footer .footer-msg ul{margin-top: 5px;}
+.com-footer .footer-msg li{display: inline-block;color: #848484;}
+.com-footer .footer-msg li a{color: #848484;padding: 0 5px}
+.com-footer .footer-msg p{color: #848484; text-align: center;font-size: 13px;margin-top: 5px;}
+.com-footer .footer-link{text-align: center;padding-top: 20px;}
+
+.x-wrap a:hover,.x-header a:hover,.top-nav-bar a:hover,.com-header a:hover{text-decoration:none;}
+
+.dhzg{
+	color:rgb(74, 74, 74);
+	width:62px}
+
+

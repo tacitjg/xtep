@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xtep官网</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/xtep.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<!-- 轮播jquery插件 -->
+	<link href="css/ywnav.css" type="text/css" rel="stylesheet" />
+	<script src="js/jquery.1.8.3.js" type="text/javascript"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<!-- 公告部分css插件 -->
+	<link href="css/common.css" type="text/css" rel="stylesheet" />
+	<link href="css/ywtopbanner.css" type="text/css" rel="stylesheet" />
+	<link href="css/ywbase.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div id="top">
+		<div class="wd1200">
+			<span>您好，欢迎光临特步官方商城！</span>
+			<a id="log_in" href="">请登录</a>&nbsp<a href="">免费注册</a>&nbsp
+			<a href="">特步合伙人</a>
+			<div class="top_r right">
+				<dl>
+					<dd id="mine" class="disp">
+						<h3>
+							<a href=""><b class="disp">0</b>我的特步<i class="disp"></i></a>
+						</h3>
+						<ul>
+							<li><a href="">待支付</a></li>
+							<li><a href="">代收货</a></li>
+							<li><a href="">待评价</a></li>
+							<li><a href="">站内信<i class="disp right">0</i></a></li>
+						</ul>
+					</dd>
+					<dd class="disp">
+						<h3>
+							<a href="">品牌官网</a>
+						</h3>
+					</dd>
+					<dd id="qr" class="disp">
+						<h3>
+							<a href=""><b class="disp"></b>手机特步<i class="disp"></i></a>
+						</h3>
+						<ul>
+							<li><img src="img/iqr.jpg"></li>
+						</ul>
+					</dd>
+					<dd id="shop_car" class="disp">
+						<h3>
+							<a href=""><b class="disp"></b>购物车<span>(0)</span>件</a>
+						</h3>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<a href=""><img id="gg" src="temp/gg.jpg"></a>
+	<div id="header">
+		<div class="wd1200">
+			<a href=""><img class="disp left logo" src="img/logo.gif"></a>
+			<div>
+				<div class="search disp">
+					<form>
+						<input class="left" type="text" placeholder ="跑鞋"><button class="left">搜索</button>
+					</form>
+					<p class="left">
+						<span>热卖搜索：</span>
+						<a target="_blank" href="/list_goods/index?keywords=专柜同款">专柜同款</a>|
+						<a target="_blank" href="/list_goods/index?cat_code=288">男跑鞋</a>|
+						<a target="_blank" href="/list_goods/index?cat_code=296">女跑鞋</a>|
+						<a target="_blank" href="/list_goods/index?keywords=抗击寒冬">棉服/羽绒服</a>|
+						<a target="_blank" href="/actives/">清仓</a>
+					</p>
+				</div>
+				<!-- header右上角广告 -->
+				<div id="adv-scroll" class="adv-scroll" style="display: block;">
+					<div class="bd">
+						<ul>
+							<li style="display: none;">
+								<a href=""><img src="temp/1.jpg"></a>
+							</li>
+							<li style="display: none;">
+								<a href=""><img src="temp/2.jpg"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="hd">
+						<ul><li></li><li></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 右侧购物信息 -->
+	<div id="right_show">
+		<div id="tjg"></div>
+		<ul id="right_nav">
+			<li id="right_logo">
+				<em class="disp_none"></em>
+				<div class="disp_none">我的特步</div>
+			</li>
+			<li id="right_car">
+				<em></em>
+				<i></i>
+				<span>购物车</span>
+				<b>0</b>
+				<div class="disp_none">您的购物车是空的</div>
+			</li>
+			<li id="right_contact">
+				<em></em>
+				<i></i>
+				<span>联系客服</span>
+				<b>0</b>
+				<div class="disp_none">
+					<img usemap="right_contact" src="img/right_contact.png">
+					<map name="right_contact">
+						<area onfocus=""  shape="circle"
+						coords="60,50,50" href="" target="_blank">
+						<area onfocus=""  shape="rect"
+						coords="0,109,120,158" href="" target="_blank">
+					</map>
+				</div>
+			</li>
+			<li id="right_collect">
+				<em></em>
+				<i></i>
+				<div class="disp_none">
+					<h5>
+						<span>我的收藏</span>
+						<img onclick="closeme()" class="right" src="img/icon-x.png">
+					</h5>
+					<ul>
+						<p>您还没有收藏商品哦！马上去逛逛吧：<a href="">商城首页</a></p>
+					</ul>
+				</div>
+			</li>
+			<li id="right_saoma">
+				<em></em>
+				<i></i>
+				<div class="disp_none">
+					<img src="img/saoma.png">
+				</div>
+			</li>
+			<li id="right_rt">
+				<em></em>
+				<i></i>
+				<div class="disp_none">返回顶部</div>
+			</li>
+		</ul>
+	</div>
+	<!-- 右侧购物信息动态功能 -->
+	<script type="text/javascript">
+		$("#right_show").mouseover(function(){
+			$("#right_show #tjg").css("transform","translate3d(-34px, 0px, 0px)")
+			$("#right_show ul li").mouseover(function(){
+				$("#right_show ul li").find("div").css("display","none")
+				$("#right_show ul li").find("em").css("border-left","5px solid #272727")
+				$(this).find("div").css("display","block")
+				$(this).find("em").css("border-left","5px solid #fff")
+			})
+		})
+		$("#right_show").mouseleave(function(){
+				$("#right_show ul li").find("div").css("display","none")
+				$("#right_show ul li").find("em").css("border-left","5px solid #272727")
+				$("#right_show #tjg").css("transform","translate3d(34px, 0px, 0px)")
+		})
+		$(function(){
+			$("#right_rt i").click(function() {
+				$("html,body").animate({scrollTop:0}, 500);
+			}); 
+		})
+	</script>
+		
+	<div id="nav">
+		<div class="wd1200 clearfix">
+			<div class="all_classify left">
+				<img class="disp" src="img/all_zk.png">
+				 全部商品分类
+			</div>
+			<div id="nav_col" class="left">
+				<span class="left"><a href="">首页</a></span>
+				<ul class="left">
+					<li><a href="">跑步</a></li>
+					<li><a href="">休闲</a></li>
+					<li><a href="">户外</a></li>
+					<li><a href="">篮足</a></li>
+					<li><a href="">综训</a></li>
+					<li><a href="">儿童</a></li>
+					<li><a href="">团购</a></li>
+					<li><a href="">特惠</a></li>
+				</ul>
+				<span class="go">
+					<a class="diap" href=""><img src="img/321go.png"></a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="wd1200">
+		<div id="nav_row" class="wd1200">
+			<ul>
+				<li>
+					<h3>
+						<a href="">男鞋</a>
+						<img class="right" src="img/right_arrow.png">
+					</h3>
+					<p>
+						<a href="">跑步鞋</a>
+						<a href="">休闲鞋</a>
+						<a href="">棉鞋</a>
+					</p>
+					<p>
+						<a href="">综训鞋</a>
+						<a href="">户外鞋</a>
+						<a href="">篮球鞋</a>
+					</p>
+				</li>
+				<li>
+					<h3>
+						<a href="">女鞋</a>
+						<img class="right" src="img/right_arrow.png">
+					</h3>
+					<p>
+						<a href="">跑步鞋</a>
+						<a href="">休闲鞋</a>
+						<a href="">棉鞋</a>
+					</p>
+					<p>
+						<a href="">综训鞋</a>
+						<a href="">户外鞋</a>
+						<a href="">冬季新品</a>
+					</p>
+				</li>
+				<li>
+					<h3>
+						<a href="">男鞋</a>
+						<img class="right" src="img/right_arrow.png">
+					</h3>
+					<p>
+						<a href="">羽绒服/棉服</a>
+						<a href="">运动外套</a>
+					</p>
+					<p>
+						<a href="">卫衣</a>
+						<a href="">长T</a>
+						<a href="">运动长裤</a>
+					</p>
+				</li>
+				<li>
+					<h3>
+						<a href="">女装</a>
+						<img class="right" src="img/right_arrow.png">
+					</h3>
+					<p>
+						<a href="">羽绒服/棉服</a>
+						<a href="">运动外套</a>
+					</p>
+					<p>
+						<a href="">卫衣</a>
+						<a href="">长T</a>
+						<a href="">运动长裤</a>
+					</p>
+				</li>
+				<li>
+					<h3>
+						<a href="">儿童</a>
+						<img class="right" src="img/right_arrow.png">
+					</h3>
+					<p>
+						<a href="">跑步鞋</a>
+						<a href="">休闲鞋</a>
+						<a href="">板鞋</a>
+					</p>
+					<p>
+						<a href="">棉服</a>
+						<a href="">长T</a>
+						<a href="">运动长裤</a>
+					</p>
+				</li>
+				<li>
+					<h3>
+						<a href="">配件</a>
+						<img class="right" src="img/right_arrow.png">
+					</h3>
+					<p>
+						<a href="">运动袜</a>
+						<a href="">双肩包</a>
+						<a href="">挎包</a>
+						<a href="">帽子</a>
+					</p>
+				</li>
+				<li>
+					<h3>
+						<a href="">活动推荐</a>
+						<img class="right" src="img/right_arrow.png">
+					</h3>
+					<p>
+						<a href="">团购</a>
+						<a href="">秒杀</a>
+					</p>
+					<p>
+						<a href="">更多活动</a>
+					</p>
+				</li>
+			</ul>
+			<!-- 下面是男鞋/女鞋/男装/女装/...的扩展代码 -->
+			<div id="nav_row_info">
+				<div class="row_absolute">
+					<div class="boy_shoes_left left">
+						<dl>
+							<dt>男鞋</dt>
+							<dd>
+								<a href="">跑步鞋</a>
+								<a href="">休闲鞋</a>
+								<a href="">户外鞋</a>
+								<a href="">板鞋</a>
+								<a href="">篮球鞋</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>男鞋</dt>
+							<dd>
+								<a href="">足球鞋</a>
+								<a href="">小白鞋</a>
+								<a href="">棉鞋</a>
+								<a href="">跑步系列</a>
+							</dd>
+						</dl>
+						<a class="nav_info" href="">活动推荐</a>
+						<a class="nav_info" href="">好货推荐</a>
+						<a class="nav_info" href="">专柜同款</a>
+						<a class="nav_info" href="">烽火系列</a>
+						<a class="nav_info" href="">秋季上新</a>
+						<a class="nav_info" href="">跑步馆</a>
+					</div>
+					<div class="shoe_right left"><img src="temp/shoes1.jpg"></div>
+				</div>
+				<div class="row_absolute">
+					<div class="boy_shoes_left left">
+						<dl>
+							<dt>女鞋</dt>
+							<dd>
+								<a href="">跑步鞋</a>
+								<a href="">休闲鞋</a>
+								<a href="">户外鞋</a>
+								<a href="">板鞋</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>女鞋</dt>
+							<dd>
+								<a href="">综训鞋</a>
+								<a href="">小白鞋</a>
+								<a href="">棉鞋</a>
+							</dd>
+						</dl>
+						<a class="nav_info" href="">更多活动</a>
+						<a class="nav_info" href="">专柜同款</a>
+						<a class="nav_info" href="">秋季新品</a>
+						<a class="nav_info" href="">烽火系列</a>
+					</div>
+					<div class="shoe_right left"><img src="temp/shoes2.jpg"></div>
+				</div>
+				<div class="row_absolute">
+					<div class="boy_shoes_left left">
+						<dl>
+							<dt>男装</dt>
+							<dd>
+								<a href="">长T</a>
+								<a href="">polo衫</a>
+								<a href="">针织打底衫</a>
+								<a href="">卫衣</a>
+								<a href="">夹克</a>
+								<a href="">外套</a>
+								<a href="">室内健身短裤/中裤</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>男装</dt>
+							<dd>
+								<a href="">风衣</a>
+								<a href="">运动长裤</a>
+								<a href="">运动套装</a>
+								<a href="">羽绒服</a>
+								<a href="">棉服</a>
+							</dd>
+						</dl>
+						<a class="nav_info" href="">秋季上新</a>
+						<a class="nav_info" href="">男子装备</a>
+						<a class="nav_info" href="">专柜同款</a>
+						<a class="nav_info" href="">更多推荐</a>
+					</div>
+					<div class="shoe_right left"><img src="temp/shoes3.jpg"></div>
+				</div>
+				<div class="row_absolute">
+					<div class="boy_shoes_left left">
+						<dl>
+							<dt>女装</dt>
+							<dd>
+								<a href="">长T</a>
+								<a href="">polo衫</a>
+								<a href="">针织打底衫</a>
+								<a href="">卫衣</a>
+								<a href="">夹克/风衣</a>
+								<a href="">室内健身短裤/中裤</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>女装</dt>
+							<dd>
+								<a href="">风衣</a>
+								<a href="">运动长裤</a>
+								<a href="">运动套装</a>
+								<a href="">羽绒服</a>
+								<a href="">棉服</a>
+							</dd>
+						</dl>
+						<a class="nav_info" href="">女子装备</a>
+						<a class="nav_info" href="">专柜同款</a>
+						<a class="nav_info" href="">更多推荐</a>
+					</div>
+					<div class="shoe_right left"><img src="temp/shoes4.jpg"></div>
+				</div>
+				<div class="row_absolute mt80">
+					<div class="boy_shoes_left left">
+						<dl>
+							<dt>童鞋</dt>
+							<dd>
+								<a href="">跑步鞋</a>
+								<a href="">休闲鞋</a>
+								<a href="">板鞋</a>
+								<a href="">户外鞋</a>
+								<a href="">帆布鞋</a>
+								<a href="">棉鞋</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>童鞋</dt>
+							<dd>
+								<a href="">长袖T恤/毛衣/卫衣</a>
+								<a href="">外套</a>
+								<a href="">运动长裤/休闲裤</a>
+								<a href="">棉服</a>
+							</dd>
+						</dl>
+						<a class="nav_info" href="">亲子系列</a>
+						<a class="nav_info" href="">休闲系列</a>
+						<a class="nav_info" href="">跑步馆</a>
+					</div>
+					<div class="shoe_right left"><img src="temp/shoes5.jpg"></div>
+				</div>
+				<div class="row_absolute mt80">
+					<div class="boy_shoes_left left">
+						<dl>
+							<dt>运动包</dt>
+							<dd>
+								<a href="">双肩包</a>
+								<a href="">户外包</a>
+								<a href="">挎包</a>
+								<a href="">腰包</a>
+								<a href="">钱包</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>配件</dt>
+							<dd>
+								<a href="">运动袜</a>
+								<a href="">帽子</a>
+								<a href="">护具</a>
+								<a href="">运动配件</a>
+								<a href="">其他配件</a>
+							</dd>
+						</dl>
+						<a class="nav_info" href="">更多活动</a>
+						<a class="nav_info" href="">男子馆</a>
+						<a class="nav_info" href="">女子馆</a>
+						<a class="nav_info" href="">专柜同款</a>
+					</div>
+					<div class="shoe_right left"><img src="temp/shoes6.jpg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 下面是跑步/休闲/户外/篮足/...的扩展代码 -->
+	<div class="wd1200">
+		<div id="nav_col_info" class="wd1200">
+			<div class="nav_absolute">
+				<div class="run_left left">
+					<dl class="left">
+						<dt>男子跑步</dt>
+						<dd><a href="">男跑鞋</a></dd>
+						<dd><a href="">越野跑鞋</a></dd>
+						<dd><a href="">羽绒服/棉服</a></dd>
+						<dd><a href="">运动长T恤/室内健身装备</a></dd>
+						<dd><a href="">运动紧身长裤</a></dd>
+						<dd><a href="">运动长裤</a></dd>
+						<dd><a href="">运动套装</a></dd>
+						<dd><a href="">秋冬新品</a></dd>
+						<dd><a href="">男童跑步系列</a></dd>
+						<dd><a href="">运动袜</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>女子跑步</dt>
+						<dd><a href="">女跑鞋</a></dd>
+						<dd><a href="">羽绒服/棉服</a></dd>
+						<dd><a href="">运动长T恤/室内健身装备</a></dd>
+						<dd><a href="">运动紧身长裤</a></dd>
+						<dd><a href="">运动长裤</a></dd>
+						<dd><a href="">都市夜跑族</a></dd>
+						<dd><a href="">综训系列</a></dd>
+						<dd><a href="">女童跑步系列</a></dd>
+						<dd><a href="">双肩包</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>科技</dt>
+						<dd><a href="">减震旋科技</a></dd>
+						<dd><a href="">易折弯科技</a></dd>
+						<dd><a href="">驭光科技</a></dd>
+						<dd><a href="">动力巢科技</a></dd>
+						<dd><a href="">气能还科技</a></dd>
+					</dl>
+					<a class="nav_info" href="">更多活动</a>
+					<a class="nav_info" href="">专柜同款</a>
+					<a class="nav_info" href="">烽火系列</a>
+					<a class="nav_info" href="">跑步馆</a>
+					<a class="nav_info" href="">秋季新品</a>
+				</div>
+				<div class="left">
+					<img class="run_right" src="temp/r1.jpg">
+				</div>
+			</div>
+			<div class="nav_absolute">
+				<div class="run_left left">
+					<dl class="left">
+						<dt>男子休闲</dt>
+						<dd><a href="">男休闲鞋</a></dd>
+						<dd><a href="">男板鞋</a></dd>
+						<dd><a href="">羽绒服</a></dd>
+						<dd><a href="">棉服</a></dd>
+						<dd><a href="">休闲外套</a></dd>
+						<dd><a href="">休闲长T恤</a></dd>
+						<dd><a href="">卫衣</a></dd>
+						<dd><a href="">休闲裤</a></dd>
+						<dd><a href="">变形金刚同款</a></dd>
+						<dd><a href="">校园系列</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>女子休闲</dt>
+						<dd><a href="">女休闲鞋</a></dd>
+						<dd><a href="">女板鞋</a></dd>
+						<dd><a href="">羽绒服</a></dd>
+						<dd><a href="">棉服</a></dd>
+						<dd><a href="">休闲外套</a></dd>
+						<dd><a href="">休闲长T恤</a></dd>
+						<dd><a href="">卫衣</a></dd>
+						<dd><a href="">休闲裤</a></dd>
+						<dd><a href="">π系列</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>科技</dt>
+						<dd><a href="">夜跑</a></dd>
+						<dd><a href="">驭光科技</a></dd>
+						<dd><a href="">气能还科技</a></dd>
+						<dd><a href="">Air Mega</a></dd>
+					</dl>
+					<a class="nav_info" href="">更多活动</a>
+					<a class="nav_info" href="">专柜同款</a>
+					<a class="nav_info" href="">休闲馆</a>
+					<a class="nav_info" href="">AIR MEGA</a>
+					<a class="nav_info" href="">小白鞋</a>
+				</div>
+				<div class="left">
+					<img class="run_right" src="temp/r2.jpg">
+				</div>
+			</div>
+			<div class="nav_absolute">
+				<div class="run_left left">
+					<dl class="left">
+						<dt>男子户外</dt>
+						<dd><a href="">男户外鞋</a></dd>
+						<dd><a href="">户外风衣/皮肤衣</a></dd>
+						<dd><a href="">冲锋衣</a></dd>
+						<dd><a href="">男户外裤装</a></dd>
+						<dd><a href="">运动袜</a></dd>
+						<dd><a href="">户外新品</a></dd>
+						<dd><a href="">男子馆</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>女子户外</dt>
+						<dd><a href="">女户外鞋</a></dd>
+						<dd><a href="">女户外服</a></dd>
+						<dd><a href="">户外风衣/皮肤衣</a></dd>
+						<dd><a href="">冲锋衣</a></dd>
+						<dd><a href="">女户外裤装</a></dd>
+						<dd><a href="">女子馆</a></dd>
+						<dd><a href="">户外装备</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>户外系列</dt>
+						<dd><a href="">户外新品</a></dd>
+						<dd><a href="">儿童户外</a></dd>
+						<dd><a href="">酷干科技</a></dd>
+					</dl>
+					<a class="nav_info" href="">专柜同款</a>
+					<a class="nav_info" href="">好货推荐</a>
+					<a class="nav_info" href="">清仓</a>
+					<a class="nav_info" href="">女子运动馆</a>
+				</div>
+				<div class="left">
+					<img class="run_right" src="temp/r3.jpg">
+				</div>
+			</div>
+			<div class="nav_absolute">
+				<div class="run_left left">
+					<dl class="left">
+						<dt>篮球</dt>
+						<dd><a href="">篮球鞋</a></dd>
+						<dd><a href="">儿童篮球鞋</a></dd>
+						<dd><a href="">篮球背心</a></dd>
+						<dd><a href="">篮球裤</a></dd>
+						<dd><a href="">运动套装</a></dd>
+						<dd><a href="">运动袜</a></dd>
+						<dd><a href="">篮球</a></dd>
+						<dd><a href="">运动护腕</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>足球</dt>
+						<dd><a href="">足球鞋</a></dd>
+						<dd><a href="">足球上装</a></dd>
+						<dd><a href="">足球下装</a></dd>
+						<dd><a href="">足球套装</a></dd>
+						<dd><a href="">足球</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>篮足系列</dt>
+						<dd><a href="">篮球系列</a></dd>
+						<dd><a href="">足球系列</a></dd>
+						<dd><a href="">舍普琴科同款</a></dd>
+						<dd><a href="">篮球新品</a></dd>
+					</dl>
+					<a class="nav_info" href="">专柜同款</a>
+					<a class="nav_info" href="">篮球馆</a>
+					<a class="nav_info" href="">足球馆</a>
+					<a class="nav_info" href="">女子运动馆</a>
+					<a class="nav_info" href="">男子运动馆</a>
+				</div>
+				<div class="left">
+					<img class="run_right" src="temp/r4.jpg">
+				</div>
+			</div>
+			<div class="nav_absolute">
+				<div class="run_left left">
+					<dl class="left">
+						<dt>男子综训</dt>
+						<dd><a href="">训练/健身鞋</a></dd>
+						<dd><a href="">羽毛球鞋</a></dd>
+						<dd><a href="">男综训服</a></dd>
+						<dd><a href="">综训T恤</a></dd>
+						<dd><a href="">综训裤装</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>女子综训</dt>
+						<dd><a href="">训练/健身鞋</a></dd>
+						<dd><a href="">羽毛球鞋</a></dd>
+						<dd><a href="">女综训服</a></dd>
+						<dd><a href="">综训T恤</a></dd>
+						<dd><a href="">综训新品</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>科技</dt>
+						<dd><a href="">动力巢科技</a></dd>
+						<dd><a href="">气能还科技</a></dd>
+						<dd><a href="">减震旋科技</a></dd>
+					</dl>
+					<a class="nav_info" href="">专柜同款</a>
+					<a class="nav_info" href="">健身馆</a>
+					<a class="nav_info" href="">男子运动馆</a>
+					<a class="nav_info" href="">女子运动馆</a>
+				</div>
+				<div class="left">
+					<img class="run_right" src="temp/r5.jpg">
+				</div>
+			</div>
+			<div class="nav_absolute">
+				<div class="run_left left">
+					<dl class="left">
+						<dt>童鞋</dt>
+						<dd><a href="">跑鞋</a></dd>
+						<dd><a href="">休闲鞋</a></dd>
+						<dd><a href="">户外鞋</a></dd>
+						<dd><a href="">板鞋</a></dd>
+						<dd><a href="">帆布鞋</a></dd>
+						<dd><a href="">棉鞋</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>童装</dt>
+						<dd><a href="">长袖/T恤</a></dd>
+						<dd><a href="">外套</a></dd>
+						<dd><a href="">休闲裤</a></dd>
+						<dd><a href="">棉裤</a></dd>
+					</dl>
+					<dl class="left">
+						<dt>儿童系列</dt>
+						<dd><a href="">儿童新品</a></dd>
+						<dd><a href="">运动配件</a></dd>
+						<dd><a href="">儿童跑步系列</a></dd>
+					</dl>
+					<a class="nav_info" href="">专柜同款</a>
+					<a class="nav_info" href="">跑步馆</a>
+					<a class="nav_info" href="">清仓</a>
+				</div>
+				<div class="left">
+					<img class="run_right" src="temp/r6.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 下面是轮播图代码 -->
+	<div id="banner" class="fullSlide">
+		<div class="bd">
+			<ul>
+				<li _src="url(temp/banner1.jpg)" style="background:#EDEDED center 0 no-repeat;width:1920px;"> <a style="width:100%;display:block;" href="" target="_blank"></a> 
+				</li>
+				<li _src="url(temp/banner2.jpg)" style="background:#EDEDED center 0 no-repeat;width:1920px;"> <a style="width:100%;display:block;" href="" target="_blank"></a> 
+				</li>
+				<li _src="url(temp/banner3.jpg)" style="background:#EDEDED center 0 no-repeat;width:1920px;"> <a style="width:100%;display:block;" href="" target="_blank"></a> 
+				</li>
+				<li _src="url(temp/banner4.jpg)" style="background:#EDEDED center 0 no-repeat;width:1920px;"> <a style="width:100%;display:block;" href="" target="_blank"></a> 
+				</li>
+				<li _src="url(temp/banner5.jpg)" style="background:#EDEDED center 0 no-repeat;width:1920px;"> <a style="width:100%;display:block;" href="" target="_blank"></a> 
+				</li>
+			</ul>
+		</div>
+		<div class="hd">
+			<ul>
+			</ul>
+		</div>
+		<div class="fpn">
+			<ul>
+				<li class="prev"> </li>
+				<li class="next"></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		/* 控制左右按钮显示 */
+		jQuery(".fullSlide").hover(function(){
+			jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.3);
+			var left=$("#nav_row").offset().left+250;
+			jQuery(this).find(".prev").css({"left":left});
+			var left=$("#nav_row").offset().left+1122;
+			jQuery(this).find(".next").css({"left":left});
+		},function(){
+				jQuery(this).find(".prev,.next").fadeOut();
+		});
+
+		/* 调用SuperSlide */
+		jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click",
+			startFun:function(i){
+				var curLi = jQuery(".fullSlide .bd li").eq(i); /* 当前大图的li */
+				if( !!curLi.attr("_src") ){
+					curLi.css("background-image",curLi.attr("_src")).removeAttr("_src") /* 将_src地址赋予li背景，然后删除_src */
+				}
+			}
+		});
+	</script>
+	<!-- 特卖 -->
+	<div class="bgf4">
+		<div id="recommend" class="wd1200">
+			<a href=""><img src="temp/in1.jpg"></a>
+			<a href=""><img src="temp/in2.jpg"></a>
+			<a href=""><img src="temp/in3.jpg"></a>
+		</div>
+	</div>
+	
+	<!-- 下面是公告轮播代码 -->
+	<div class="bgf4">
+		<div class="i-special-box c-wrap clearfix">
+			<ul class="i-special-img">
+				<li>
+					<div class="item">
+						<a href="" target="_blank"><img src="temp/club1.jpg" alt="" /></a>
+					<div class="txt">
+						<h3>跑步馆</h3>
+						<p>真跑者 不停歇</p>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<a href="" target="_blank"><img alt="" src="temp/club2.jpg" /></a>
+					<div class="txt">
+						<h3>综训馆</h3>
+						<p>战不歇 就要练</p>
+					</div>
+				</li>
+				<li style="margin-right:0;">
+					<div class="item">
+						<a href=""><img alt="" src="temp/club3.jpg" /></a>
+					<div class="txt">
+						<h3>暖冬馆</h3>
+						<p>抵御寒冬 温暖出击</p>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<a href=""><img alt="" src="temp/club4.jpg" /></a>
+					<div class="txt">
+						<h3>休闲馆</h3>
+						<p>占领街头 玩无止尽</p>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<a href=""><img alt="" src="temp/club5.jpg" /></a>
+					<div class="txt">
+						<h3>女子馆</h3>
+						<p>绽不歇 练就美力</p>
+					</div>
+				</li>
+				<li style="margin-right:0;">
+					<div class="item">
+						<a href="" target="_blank"><img alt="" src="temp/club6.jpg" /></a>
+					<div class="txt">
+						<h3>户外馆</h3>
+						<p>无阻前行 每一步都是探索 </p>
+					</div>
+				</li>
+			</ul>
+			<div class="gonggao">
+				<div class="new-actives" style="margin:0 auto">
+					<div class="tab-hd">
+						<h4> 公告</h4>
+						<span class="step">
+							<a href="javascript:void(0)" class="prev"><s class="arrow arrow-lthin"><s></s></s></a> 
+							<a href="javascript:void(0)" class="next"><s class="arrow arrow-rthin"><s></s></s></a>
+						</span>
+					</div>
+					<div class="tab-bd">
+						<div class="tab-bd-in"> 
+							<ul>
+								<li>
+									<a href="/help-486.html">资讯:跑友春节赴宴攻略及3个注意事项!</a>
+								</li>
+								<li>
+									<a href="/help-485.html">资讯:过年没时间跑步，真的会影响状态吗?</a>
+								</li><li>
+									<a href="/help-484.html">资讯:配速3~5分钟的中高水平跑者想要跑得更好?必知5项营养知识</a>
+								</li>
+								<li>
+									<a href="/help-483.html">资讯:切记!跑后这些错误行为千万别做</a>
+								</li>
+								<li>
+									<a href="/help-482.html">资讯:真跑者“巢”向2017——跑，不停歇</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="/help-481.html">资讯:专业跑者分享│ 如何选择又快又稳的落地跑法</a>
+								</li>
+								<li>
+									<a href="/help-300.html">预告:特步14周年庆</a></li>
+								<li>
+									<a href="/help-297.html">预告:春夏运动 限时优选 2件119起</a>
+								</li>
+								<li>
+									<a href="/help-294.html">预告:春行与自由不期而遇 专区2件139</a>
+								</li>
+								<li>
+									<a href="/help-291.html">预告:特步321跑步节，特惠3.21元起</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="/help-286.html">预告:特步春季运动套装精选</a>
+								</li>
+								<li>
+									<a href="/help-285.html">预告:特步焕新季</a>
+								</li>
+								<li>
+									<a href="/help-225.html">公告:客服电话调整公告</a>
+								</li>
+								<li>
+									<a href="/help-220.html">公告:特步会员红包群火热开启</a>
+								</li>
+								<li>
+									<a href="/help-144.html">公告:关于假冒客服诈骗的声明</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="/help-51.html">公告:你所不知道的跑步鞋知识</a>
+								</li>
+							</ul> <!-- 此行勿动 --> 
+						</div>
+					</div>
+				</div>
+				<div class="focusBox" id="focusBox" style="margin:0 auto">
+					<ul class="pic">
+						<li>
+							<a href=""><img src="temp/g1.jpg" /></a>
+						</li>
+						<li>
+							<a href=""><img src="temp/g2.jpg" /></a>
+						</li>
+						<li>
+							 <a href=""><img src="temp/g3.jpg" /></a>
+						</li>
+						<li>
+							 <a href=""><img src="temp/g4.jpg" /></a>
+						</li>
+					</ul>
+					<a class="prev" href="javascript:void(0)"></a>
+					<a class="next" href="javascript:void(0)"></a>
+					<ul class="hd">
+						<li> </li>
+						<li> </li>
+						<li> </li>
+						<li> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$("#focusBox a[href='javascript:void(0)']").hide();
+				$("#focusBox").hover(function(){ $("#focusBox a[href='javascript:void(0)']").fadeTo("show",0.7) },function(){ $("#focusBox a[href='javascript:void(0)']").fadeOut() });
+			});
+			jQuery(".new-actives").slide({ mainCell:".tab-bd-in", effect:"left", delayTime:400,pnLoop:false,easing:"easeOutCubic" });
+			jQuery(".focusBox").slide({ mainCell:".pic",effect:"left", autoPlay:true, delayTime:300});
+		</script>
+	</div>	
+	<!-- 春节不打烊公告信息 -->
+	<div class="bgf4">
+		<div id="map" class="wd1200">
+			<a href="http://www.xtep.com.cn/2016js/"><img src="temp/gg_fes.jpg" usemap="#Map"></a>
+			<map name="Map">
+				<area onfocus="blur(this)"  shape="rect"
+				coords="17,7,164,84" href="http://www.xtep.com.cn/list_goods/index?keywords=%E5%8A%A8%E5%8A%9B%E5%B7%A2" target="_blank">
+				<area onfocus="blur(this)"  shape="rect"
+				coords="183,6,330,80" href="http://www.xtep.com.cn/list_goods/index?keywords=减震旋" target="_blank">
+				<area onfocus="blur(this)"  shape="rect"
+				coords="357,7,505,82" href="http://www.xtep.com.cn/list_goods/index?keywords=气能环" target="_blank">
+				<area onfocus="blur(this)"  shape="rect"
+				coords="522,9,677,81" href="http://www.xtep.com.cn/list_goods/index?keywords=柔立方" target="_blank">
+				<area onfocus="blur(this)"  shape="rect"
+				coords="694,8,851,85" href="http://www.xtep.com.cn/list_goods/index?keywords=驭光" target="_blank">
+				<area onfocus="blur(this)"  shape="rect"
+				coords="868,8,1024,85" href="http://www.xtep.com.cn/list_goods/index?keywords=易弯折" target="_blank">
+				<area onfocus="blur(this)"  shape="rect"
+				coords="1037,6,1195,84" href="http://www.xtep.com.cn/gonggao/" target="_blank">
+			</map>
+		</div>
+	</div>
+	<!-- 以下是各大楼层 -->
+	<div id="all_floor" class="bgf4">
+		<!-- 1F楼层商品 -->
+		<div id="louti1" class="floor_content wd1200 clearfix pt30">
+			<h2>
+				<span class="disp">1F</span>
+				<a href="">男鞋</a>
+				<ul class="right">
+					<li class="active">热销款</li>
+					<li>男跑鞋</li>
+					<li>男休闲鞋</li>
+					<li>户外篮足</li>
+					<li>男童鞋</li>
+				</ul>
+			</h2>
+			<div>
+				<div class="nav_left left">
+					<p>
+						<a class="active" href="">运动鞋</a><a href="">休闲鞋</a>
+					</p>
+					<a class="fn1" href=""><img src="temp/fn1-1.jpg"></a>
+					<ul class="clearfix">
+						<li><a href="">男跑鞋</a></li>
+						<li><a href="">男休闲鞋</a></li>
+						<li><a href="">时尚板鞋</a></li>
+						<li><a href="">男篮球鞋</a></li>
+						<li><a href="">男足球鞋</a></li>
+						<li><a href="">男户外鞋</a></li>
+						<li><a href="">综训鞋</a></li>
+						<li><a href="">儿童鞋</a></li>
+					</ul>
+					<a class="fn2" href=""><img src="temp/fn1-2.jpg"></a>
+				</div>
+				<!-- 男鞋产品介绍切换 -->
+				<div class="product left">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f1_a1.jpg"></a></li>
+						<li><a href=""><img src="temp/f1_a2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">轻便舒适男跑鞋</a>
+							<a href=""><img src="temp/f1_a3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新品潮流休闲鞋</a>
+							<a href=""><img src="temp/f1_a5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">19代风火男跑鞋</a>
+							<a href=""><img src="temp/f1_a4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新品火爆小白鞋</a>
+							<a href=""><img src="temp/f1_a6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">潮流热销休闲鞋</a>
+							<a href=""><img src="temp/f1_a7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f1_b1.jpg"></a></li>
+						<li><a href=""><img src="temp/f1_b2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">轻便舒适男跑鞋</a>
+							<a href=""><img src="temp/f1_b3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">驭光科技跑鞋</a>
+							<a href=""><img src="temp/f1_b5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">舒适气垫男跑鞋</a>
+							<a href=""><img src="temp/f1_b4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">潮流百搭男跑鞋</a>
+							<a href=""><img src="temp/f1_b6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">减震科技男跑鞋</a>
+							<a href=""><img src="temp/f1_b7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f1_c1.jpg"></a></li>
+						<li><a href=""><img src="temp/f1_c2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">简约潮流都市鞋</a>
+							<a href=""><img src="temp/f1_c3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新款百搭π系列</a>
+							<a href=""><img src="temp/f1_c5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">时尚舒适休闲鞋</a>
+							<a href=""><img src="temp/f1_c4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">舒适百搭休闲鞋</a>
+							<a href=""><img src="temp/f1_c6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">潮流时尚椰子鞋</a>
+							<a href=""><img src="temp/f1_c7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f1_d1.jpg"></a></li>
+						<li><a href=""><img src="temp/f1_d2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">新款碎钉足球鞋</a>
+							<a href=""><img src="temp/f1_d3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">极致减震篮球鞋</a>
+							<a href=""><img src="temp/f1_d5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">新品足球鞋</a>
+							<a href=""><img src="temp/f1_d4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新品缓震户外鞋</a>
+							<a href=""><img src="temp/f1_d6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">轻便户外运动鞋</a>
+							<a href=""><img src="temp/f1_d7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f1_e1.jpg"></a></li>
+						<li><a href=""><img src="temp/f1_e2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">灵动自如跑步鞋</a>
+							<a href=""><img src="temp/f1_e3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">专柜气垫跑步鞋</a>
+							<a href=""><img src="temp/f1_e5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">超缓震儿童跑鞋</a>
+							<a href=""><img src="temp/f1_e4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚运动跑步鞋</a>
+							<a href=""><img src="temp/f1_e6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">风火儿童跑步鞋</a>
+							<a href=""><img src="temp/f1_e7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 2F楼层商品 -->
+		<div id="louti2" class="floor_content wd1200 clearfix pt30">
+			<h2>
+				<span class="disp">2F</span>
+				<a href="">女鞋</a>
+				<ul class="right">
+					<li class="active">热销款</li>
+					<li>女跑鞋</li>
+					<li>女休闲鞋</li>
+					<li>女户外</li>
+					<li>女童</li>
+				</ul>
+			</h2>
+			<div>
+				<div class="nav_left left">
+					<p>
+						<a class="active" href="">运动鞋</a><a href="">休闲鞋</a>
+					</p>
+					<a class="fn1" href=""><img src="temp/fn2-1.jpg"></a>
+					<ul class="clearfix">
+						<li><a href="">女跑鞋</a></li>
+						<li><a href="">女休闲鞋</a></li>
+						<li><a href="">时尚板鞋</a></li>
+						<li><a href="">女户外鞋</a></li>
+						<li><a href="">秋季新品</a></li>
+						<li><a href="">明星同款</a></li>
+						<li><a href="">特惠集合</a></li>
+					</ul>
+					<a class="fn2" href=""><img src="temp/fn2-2.jpg"></a>
+				</div>
+				<!-- 女鞋产品介绍切换 -->
+				<div class="product left">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f2_a1.jpg"></a></li>
+						<li><a href=""><img src="temp/f2_a2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">轻便舒适男跑鞋</a>
+							<a href=""><img src="temp/f2_a3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新品潮流休闲鞋</a>
+							<a href=""><img src="temp/f2_a5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">19代风火男跑鞋</a>
+							<a href=""><img src="temp/f2_a4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新品火爆小白鞋</a>
+							<a href=""><img src="temp/f2_a6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">潮流热销休闲鞋</a>
+							<a href=""><img src="temp/f2_a7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f2_b1.jpg"></a></li>
+						<li class="liText">
+							<a class="text" href="">新款气垫女跑鞋</a>
+							<a href=""><img src="temp/f2_b2-1.jpg"></a></li>
+						<li class="liText">
+							<a class="text" href="">秋季新款跑鞋</a>
+							<a href=""><img src="temp/f2_b2-2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">时尚减震女跑鞋</a>
+							<a href=""><img src="temp/f2_b3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚运动综训鞋</a>
+							<a href=""><img src="temp/f2_b5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">舒适运动女跑鞋</a>
+							<a href=""><img src="temp/f2_b4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">智能芯片女跑鞋</a>
+							<a href=""><img src="temp/f2_b6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">缓震舒适跑鞋</a>
+							<a href=""><img src="temp/f2_b7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li>
+							<a href=""><img src="temp/f2_c1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新品百搭休闲鞋</a>
+							<a href=""><img src="temp/f2_c2-1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新品百搭休闲鞋</a>
+							<a href=""><img src="temp/f2_c2-2.jpg"></a>
+						</li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">时尚舒适休闲鞋</a>
+							<a href=""><img src="temp/f2_c3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">经典百搭小白鞋</a>
+							<a href=""><img src="temp/f2_c5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">专柜款女休闲鞋</a>
+							<a href=""><img src="temp/f2_c4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚气垫休闲鞋</a>
+							<a href=""><img src="temp/f2_c6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">全新π系列女鞋 </a>
+							<a href=""><img src="temp/f2_c7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li>
+							<a href=""><img src="temp/f2_d1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚运动户外鞋</a>
+							<a href=""><img src="temp/f2_d2-1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">防滑耐磨户外鞋</a>
+							<a href=""><img src="temp/f2_d2-2.jpg"></a>
+						</li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">户外越野运动鞋</a>
+							<a href=""><img src="temp/f2_d3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚户外越登山鞋</a>
+							<a href=""><img src="temp/f2_d5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">缓震轻便户外鞋</a>
+							<a href=""><img src="temp/f2_d4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新品户外跑鞋</a>
+							<a href=""><img src="temp/f2_d6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">透气轻便户外鞋</a>
+							<a href=""><img src="temp/f2_d7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f2_e1.jpg"></a></li>
+						<li><a href=""><img src="temp/f2_e2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">时尚女童跑步鞋</a>
+							<a href=""><img src="temp/f2_e3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">专柜甜美女童跑鞋</a>
+							<a href=""><img src="temp/f2_e5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">秀气舒适女童跑鞋</a>
+							<a href=""><img src="temp/f2_e4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">轻便舒适儿童跑鞋</a>
+							<a href=""><img src="temp/f2_e6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">舒适儿童跑步鞋</a>
+							<a href=""><img src="temp/f2_e7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 3F楼层商品 -->
+		<div id="louti3" class="floor_content wd1200 clearfix pt30">
+			<h2>
+				<span class="disp">3F</span>
+				<a href="">男装</a>
+				<ul class="right">
+					<li class="active">热销款</li>
+					<li>男运动服</li>
+					<li>男休闲鞋</li>
+					<li>男户外服</li>
+					<li>男童装</li>
+				</ul>
+			</h2>
+			<div>
+				<div class="nav_left left">
+					<p>
+						<a class="active" href="">运动服</a><a href="">休闲服</a>
+					</p>
+					<a class="fn1" href=""><img src="temp/fn3-1.jpg"></a>
+					<ul class="clearfix">
+						<li><a href="">男外套</a></li>
+						<li><a href="">男T恤</a></li>
+						<li><a href="">运动裤</a></li>
+						<li><a href="">休闲卫衣</a></li>
+						<li><a href="">户外服</a></li>
+						<li><a href="">篮足运动</a></li>
+						<li><a href="">儿童服</a></li>
+						<li><a href="">运动包</a></li>
+					</ul>
+					<a class="fn2" href=""><img src="temp/fn3-2.jpg"></a>
+				</div>
+				<!-- 男装产品介绍切换 -->
+				<div class="product left">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f3_a1.jpg"></a></li>
+						<li><a href=""><img src="temp/f3_a2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">明星同款 针织外套</a>
+							<a href=""><img src="temp/f3_a3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚保暖羽绒</a>
+							<a href=""><img src="temp/f3_a5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">新款针织长裤</a>
+							<a href=""><img src="temp/f3_a4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">休闲针织上衣</a>
+							<a href=""><img src="temp/f3_a6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">运动针织长裤</a>
+							<a href=""><img src="temp/f3_a7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f3_b1.jpg"></a></li>
+						<li><a href=""><img src="temp/f3_b2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">时尚运动外套</a>
+							<a href=""><img src="temp/f3_b3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">运动保暖羽绒</a>
+							<a href=""><img src="temp/f3_b5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">新品针织长裤</a>
+							<a href=""><img src="temp/f3_b4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">运动针织外套</a>
+							<a href=""><img src="temp/f3_b6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">运动针织长裤</a>
+							<a href=""><img src="temp/f3_b7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li>
+							<a href=""><img src="temp/f3_c1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">新款潮流卫衣</a>
+							<a href=""><img src="temp/f3_c2-1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">舒适休闲上衣</a>
+							<a href=""><img src="temp/f3_c2-2.jpg"></a>
+						</li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">潮流舒适外套</a>
+							<a href=""><img src="temp/f3_c3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">都市时尚羽绒</a>
+							<a href=""><img src="temp/f3_c5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">休闲舒适潮裤</a>
+							<a href=""><img src="temp/f3_c4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">休闲百搭上衣</a>
+							<a href=""><img src="temp/f3_c6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">休闲运动长裤 </a>
+							<a href=""><img src="temp/f3_c7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li>
+							<a href=""><img src="temp/f3_d1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">运动户外冲锋衣</a>
+							<a href=""><img src="temp/f3_d2-1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">户外专业运动衣</a>
+							<a href=""><img src="temp/f3_d2-2.jpg"></a>
+						</li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">户外专业冲锋衣</a>
+							<a href=""><img src="temp/f3_d3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">户外羽绒冲锋衣</a>
+							<a href=""><img src="temp/f3_d5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">秋冬户外冲锋裤</a>
+							<a href=""><img src="temp/f3_d4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">户外双层风衣</a>
+							<a href=""><img src="temp/f3_d6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚户外迷彩裤</a>
+							<a href=""><img src="temp/f3_d7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f3_e1.jpg"></a></li>
+						<li class="liText">
+							<a class="text" href="">潮流时尚卫衣</a>
+							<a href=""><img src="temp/f3_e2-1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">休闲舒适棉裤</a>
+							<a href=""><img src="temp/f3_e2-2.jpg"></a>
+						</li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">秋冬新款羽绒</a>
+							<a href=""><img src="temp/f3_e3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚潮流针织衣</a>
+							<a href=""><img src="temp/f3_e5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">保暖针织长裤</a>
+							<a href=""><img src="temp/f3_e4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">男童针织上衣</a>
+							<a href=""><img src="temp/f3_e6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">潮流针织长裤 </a>
+							<a href=""><img src="temp/f3_e7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 4F楼层商品 -->
+		<div id="louti4" class="floor_content wd1200 clearfix pt30">
+			<h2>
+				<span class="disp">4F</span>
+				<a href="">女装</a>
+				<ul class="right">
+					<li class="active">热销款</li>
+					<li>女运动服</li>
+					<li>女休闲鞋</li>
+					<li>女户外服</li>
+					<li>女童装</li>
+				</ul>
+			</h2>
+			<div>
+				<div class="nav_left left">
+					<p>
+						<a class="active" href="">运动服</a><a href="">休闲服</a>
+					</p>
+					<a class="fn1" href=""><img src="temp/fn4-1.jpg"></a>
+					<ul class="clearfix">
+						<li><a href="">女外套</a></li>
+						<li><a href="">女T恤</a></li>
+						<li><a href="">女卫衣</a></li>
+						<li><a href="">运动女裤</a></li>
+						<li><a href="">户外背包</a></li>
+						<li><a href="">综训服</a></li>
+						<li><a href="">季末精选</a></li>
+					</ul>
+					<a class="fn2" href=""><img src="temp/fn4-2.jpg"></a>
+				</div>
+				<!-- 女装产品介绍切换 -->
+				<div class="product left">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f4_b1.jpg"></a></li>
+						<li><a href=""><img src="temp/f4_b2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">时尚运动外套</a>
+							<a href=""><img src="temp/f4_b3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚运动羽绒</a>
+							<a href=""><img src="temp/f4_b5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">舒适运动长裤</a>
+							<a href=""><img src="temp/f4_b4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">运动针织外套</a>
+							<a href=""><img src="temp/f4_b6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">舒适运动长裤</a>
+							<a href=""><img src="temp/f4_b7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f4_a1.jpg"></a></li>
+						<li><a href=""><img src="temp/f4_a2.jpg"></a></li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">潮流针织外套</a>
+							<a href=""><img src="temp/f4_a3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚保暖羽绒</a>
+							<a href=""><img src="temp/f4_a5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">新潮针织长裤</a>
+							<a href=""><img src="temp/f4_a4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">休闲套装上衣</a>
+							<a href=""><img src="temp/f4_a6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚百搭女裤</a>
+							<a href=""><img src="temp/f4_a7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li>
+							<a href=""><img src="temp/f4_c1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">舒适休闲上衣</a>
+							<a href=""><img src="temp/f4_c2-1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚舒适卫衣</a>
+							<a href=""><img src="temp/f4_c2-2.jpg"></a>
+						</li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">时尚潮流上衣</a>
+							<a href=""><img src="temp/f4_c3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">冬季时尚羽绒</a>
+							<a href=""><img src="temp/f4_c5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">休闲收脚针织裤</a>
+							<a href=""><img src="temp/f4_c4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">时尚百搭上衣</a>
+							<a href=""><img src="temp/f4_c6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">简约休闲长裤 </a>
+							<a href=""><img src="temp/f4_c7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li>
+							<a href=""><img src="temp/f4_d1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">户外专业冲锋衣</a>
+							<a href=""><img src="temp/f4_d2-1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">舒适保暖户外衣</a>
+							<a href=""><img src="temp/f4_d2-2.jpg"></a>
+						</li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">新款户外冲锋衣</a>
+							<a href=""><img src="temp/f4_d3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">冬季新款冲锋衣</a>
+							<a href=""><img src="temp/f4_d5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">秋冬户外冲锋裤</a>
+							<a href=""><img src="temp/f4_d4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">户外专业冲锋衣</a>
+							<a href=""><img src="temp/f4_d6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">XUP户外软壳裤</a>
+							<a href=""><img src="temp/f4_d7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="product left disp_none">
+					<ul class="product_l left">
+						<li><a href=""><img src="temp/f4_e1.jpg"></a></li>
+						<li class="liText">
+							<a class="text" href="">保暖舒适冲锋衣</a>
+							<a href=""><img src="temp/f4_e2-1.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">拼色舒适上衣</a>
+							<a href=""><img src="temp/f4_e2-2.jpg"></a>
+						</li>
+					</ul>
+					<ul class="product_r left">
+						<li class="liText">
+							<a class="text" href="">时尚保暖羽绒服</a>
+							<a href=""><img src="temp/f4_e3.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">儿童保暖羽绒服</a>
+							<a href=""><img src="temp/f4_e5.jpg"></a>
+						</li>
+						<li class="pro_4">
+							<a class="text" href="">时尚靓丽裤裙</a>
+							<a href=""><img src="temp/f4_e4.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">爆款运动外套</a>
+							<a href=""><img src="temp/f4_e6.jpg"></a>
+						</li>
+						<li class="liText">
+							<a class="text" href="">针织休闲长裤</a>
+							<a href=""><img src="temp/f4_e7.jpg"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 楼层导航 -->
+	<div id="menu" class="disp_none">
+		<ul>
+			<li>
+				<a href="javascript:;"><span>1F</span>男鞋</a>
+			</li>
+			<li>
+				<a href="javascript:;"><span>2F</span>女鞋</a>
+			</li>
+			<li>
+				<a href="javascript:;"><span>3F</span>男装</a>
+			</li>
+			<li>
+				<a href="javascript:;"><span>4F</span>女装</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			var _index=0;
+			$("#menu ul li").click(function(){
+			_index=$(this).index()+1;
+			//通过拼接字符串获取元素，再取得相对于文档的高度
+			var _top=$("#louti"+_index).offset().top;
+			//scrollTop滚动到对应高度
+			$("body,html").animate({scrollTop:_top},500);
+		});
+		var nav=$("#menu"); //得到导航对象
+		var win=$(window); //得到窗口对象
+		var sc=$(document);//得到document文档对象。
+		win.scroll(function(){
+			if(sc.scrollTop()>=1600){
+				$("#menu").show(); 
+				//获取滚动元素对应的索引!!!重难点
+				var index=Math.floor((sc.scrollTop()-1600)/622);
+				$("#menu ul li span").css("background-color","#656565")
+				$("#menu ul li span").eq(index).css("background-color","#c40000")
+				$("#menu ul li a").css("color","#656565")
+				$("#menu ul li a").eq(index).css("color","#c40000")
+			}
+			else if(sc.scrollTop()>=820){
+				$("#nav").css({
+					"position":"fixed",
+					"z-index":"101",
+					"top":"0px"
+				})
+				$("#nav_row").css({
+					"position":"fixed",
+					"z-index":"101",
+					"top":"39px",
+					"display":"none"
+				})
+				$(".all_classify").hover(function(){
+					$("#nav_row").css({
+						"display":"block"
+					})
+				})
+				$(".all_classify").mouseleave(function(){
+					$("#nav_row").css({
+						"display":"none"
+					})
+				})
+				$("#nav_row").hover(function(){
+					$("#nav_row").css({
+						"display":"block"
+					})
+				})
+				$("#nav_row").mouseleave(function(){
+					$("#nav_row").css({
+						"display":"none"
+					})
+				})
+				$("#nav_col_info").css({
+					"position":"fixed",
+					"z-index":"101",
+					"top":"39px"
+				})
+			}
+			else{
+				$("#menu").hide();
+				$("#nav").css({
+					"position":"relative",
+					"z-index":"101",
+					"top":"0px"
+				})
+				$("#nav_row").css({
+					"position":"relative",
+					"display":"block",
+					"z-index":"101",
+					"top":"0px"
+				})
+				$("#nav_col_info").css({
+					"position":"relative",
+					"z-index":"101",
+					"top":"0px"
+				})
+				$("#nav_row").mouseleave(function(){
+					$("#nav_row").css({
+						"display":"block"
+					})
+				})
+				$(".all_classify").mouseleave(function(){
+					$("#nav_row").css({
+						"display":"block"
+					})
+				})
+			}
+			});
+		});
+	</script>
+	<!-- 售后服务 -->
+	<div id="serve" class="wd1200 clearfix">
+		<dl class="left">
+			<dt>关于我们</dt>
+			<dd><a href="">公司简介</a></dd>
+			<dd><a href="">联系我们</a></dd>
+			<dd><a href="">品牌加盟</a></dd>
+			<dd><a href="">授权分销商</a></dd>
+			<dd><a href="">特步合伙人</a></dd>
+		</dl>
+		<dl class="left">
+			<dt>购物指南</dt>
+			<dd><a href="">常见问题</a></dd>
+			<dd><a href="">用户注册</a></dd>
+			<dd><a href="">购物流程</a></dd>
+			<dd><a href="">邮件订阅</a></dd>
+			<dd><a href="">活动推荐</a></dd>
+		</dl>
+		<dl class="left">
+			<dt>售后服务</dt>
+			<dd><a href="">配送方式</a></dd>
+			<dd><a href="">防伪查询 20位</a></dd>
+			<dd><a href="">二维码防伪查询</a></dd>
+			<dd><a href="">会员体系介绍</a></dd>
+		</dl>
+		<dl class="left">
+			<dt>支付方式</dt>
+			<dd><a href="">支付宝</a></dd>
+			<dd><a href="">银联支付</a></dd>
+			<dd><a href="">发票制度</a></dd>
+			<dd><a href="">优惠券使用说明</a></dd>
+		</dl>
+		<div class="onlineServer left">
+			<h3>100-720-1333</h3>
+			<p>周一至周日 9:00-23:00</p>
+			<a href=""></a>
+		</div>
+	</div>
+	<div id="serve_img">
+		<img src="img/serve_img.jpg">
+	</div>
+	<div id="foot">
+		<p>
+			<a href="">关于特步</a> |
+			<a href="">人才招聘</a> |
+			<a href="">特步新闻</a> |
+			<a href="">品牌合作</a> |
+			<a href="">帮助中心</a> |
+			<a href="">商城公告</a> |
+			<a href="">友情联接</a> |
+			<a href="">联系我们</a>
+		</p>
+		<p>
+			<a href="">友情联接</a>
+			<a href="">品牌圈</a>
+			<a href="">内衣品牌</a>
+			<a href="">音平商城</a>
+			<a href="">海淘网站</a>
+			<a href="">村安商城</a>
+			<a href="">返利网</a>
+			<a href="">时尚饰界</a>
+			<a href="">钻戒网</a>
+			<a href="">化妆品招商</a>
+			<a href="">返利</a>
+			<a href="">眼镜</a>
+			<a href="">饮料品牌大全</a>
+			<a href="">亿超眼镜</a>
+			<a href="">楚天运动频道</a>
+			<img onclick="extent_link()" src="img/foot_icon1.jpg">
+		</p>
+		<p class="extent_link disp_none">
+			<a href="">海淘攻略</a>
+			<a href="">b2b商务</a>
+			<a href="">全讯网</a>
+			<a href="">美瞳</a>
+			<a href="">团购网</a>
+			<a href="">旅游网</a>
+			<a href="">珂兰钻石</a>
+			<a href="">装修</a>
+			<a href="">儿童玩具</a>
+			<a href="">杭州女装网</a>
+			<a href="">安利官网</a>
+			<a href="">千库网</a>
+			<a href="">北京新楼盘</a>
+			<a href="">培训网</a>
+			<a href="">逛逛网</a>
+			<a href="">一品威客网</a>
+			<a href="">什么值得买</a>
+			<a href="">一元云购</a>
+			<a href="">手表商城</a>
+			<a href="">茜茜公主内衣</a>
+			<a href="">品牌加盟网</a>
+			<a href="">钻石戒指</a>
+			<a href="">电动汽车</a>
+			<a href="">澳洲特产</a>
+			<a href="">童装批发</a>
+			<a href="">读后感</a>
+			<a href="">会议酒店</a>
+			<a href="">搜款网</a>
+			<a href="">拿货网</a>
+			<a href="">女装一件代发</a>
+			<a href="">深圳房产</a>
+		</p>
+		<p>特步跑鞋 Copyright 2011 xtep.com 特步运动服 All Rights Reserved 特步官方旗舰店 ICP：闽ICP备05021253号-1 特步官网专卖店</p>
+		<div>
+			<a href="">
+				<img src="img/police.png">
+				<span>闽公网安备 35020302001628号</span>
+			</a>
+		</div>
+	</div>
+	<div id="foot_link">
+		<img src="img/onlinePayment.gif">
+		<a href=""><img src="img/faith.png"></a>
+		<a href=""><img src="img/realName.png"></a>
+		<a href=""><img src="img/approve.png"></a>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+
+	$(".top_r dd").mouseover(function(){
+		$(this).find("ul").css("display","block");
+		$(this).find("i").css("background-position","-224px -576px");
+		$(this).css("background-color","#EDEEF0");
+	})
+	$(".top_r dd").mouseleave(function(){
+		$(this).find("ul").css("display","none");
+		$(this).find("i").css("background-position","-244px -576px");
+		$(this).css("background-color","#f2f2f2");
+	})
+//右上轮播广告
+	jQuery(".adv-scroll").slide({mainCell:".bd ul",autoPlay:true});
+	/*var change =setInterval(function(){
+		if ($(".bd .disp_none").css("display") == "none"){
+			$(".bd a:eq(0)").css("display","none")
+			$(".bd a:eq(1)").css("display","block")
+			$(".bd li:eq(0)").css("background-color","#ebebeb")
+			$(".bd li:eq(1)").css("background-color","#adadad")
+		}
+		else{
+			$(".bd a:eq(1)").css("display","none")
+			$(".bd a:eq(0)").css("display","block")
+			$(".bd li:eq(1)").css("background-color","#ebebeb")
+			$(".bd li:eq(0)").css("background-color","#adadad")
+		}
+	},2000)
+	$(".bd li:eq(0)").hover(function(){
+			clearInterval(change)
+			$(".bd a:eq(1)").css("display","none")
+			$(".bd a:eq(0)").css("display","block")
+			$(".bd li:eq(1)").css("background-color","#ebebeb")
+			$(".bd li:eq(0)").css("background-color","#adadad")
+	})
+	$(".bd li:eq(1)").hover(function(){
+			clearInterval(change)
+			$(".bd a:eq(0)").css("display","none")
+			$(".bd a:eq(1)").css("display","block")
+			$(".bd li:eq(0)").css("background-color","#ebebeb")
+			$(".bd li:eq(1)").css("background-color","#adadad")
+	})*/
+//nav扩展1
+	$("#nav_col li").mouseover(function(){
+		$("#nav_col li").css("background-color","#272727")
+		$("#nav_col li").find("a").css("color","#fff")
+		$(this).css("background-color","#f3f3f3")
+		$(this).find("a").css("color","#ad030b")
+		var c_index = $(this).index();
+		$("#nav_col_info .nav_absolute").css("display","none")
+		$("#nav_col_info .nav_absolute:eq("+c_index+")").css("display","block")
+		$(this).css("border-bottom","1px solid #ccc")
+	})
+	$("#nav_col li").mouseleave(function(){
+		$("#nav_col_info .nav_absolute").css("display","none")
+		$(this).css("background-color","#272727")
+		$(this).find("a").css("color","#fff")
+		$(this).css("border-bottom","none")
+	})
+	$("#nav_col_info .nav_absolute").mouseover(function(){
+		$(this).css("display","block")
+	})
+	$("#nav_col_info .nav_absolute").mouseleave(function(){
+		$(this).css("display","none")
+	})
+//nav扩展2
+	$("#nav_row li").mouseover(function(){
+		$("#nav_row li").css("background-color","#272727")
+		$(this).css("background-color","#2d2c2c")
+		var r_index = $(this).index();
+		$("#nav_row_info .row_absolute").css("display","none")
+		$("#nav_row_info .row_absolute:eq("+r_index+")").css("display","block")
+	})
+	$("#nav_row li").mouseleave(function(){
+		$("#nav_row_info .row_absolute").css("display","none")
+		$(this).css("background-color","#272727")
+	})
+	$("#nav_row_info .row_absolute").mouseover(function(){
+		$(this).css("display","block")
+	})
+	$("#nav_row_info .row_absolute").mouseleave(function(){
+		$(this).css("display","none")
+	})
+//楼层产品切换
+	$(".floor_content").mouseover(function(){
+		var floor_index = $(this).index();
+		$(this).find("h2 li").mouseover(function(){
+			$(".floor_content:eq("+floor_index+") h2 li").css({"color": "#5f5f5f","border-bottom":"none"})
+			$(this).css({"color": "#d2050a","border-bottom":"2px solid #c1121d"})
+			var f1Li_index = $(this).index();
+			$(".floor_content:eq("+floor_index+") .product").css("display","none");
+			$(".floor_content:eq("+floor_index+") .product:eq("+f1Li_index+")").css("display","block")
+		})
+	})
+	/*$(".floor_two h2 li").mouseover(function(){
+		$(".floor_two h2 li").css({"color": "#5f5f5f","border-bottom":"none"})
+		$(this).css({"color": "#d2050a","border-bottom":"2px solid #c1121d"})
+		var f1Li_index = $(this).index();
+		$(".floor_two .product").css("display","none");
+		$(".floor_two .product:eq("+f1Li_index+")").css("display","block")
+	})*/
+//foot展开链接
+	function extent_link(){
+		if ($(".extent_link").css("display") == "none"){
+			$(".extent_link").css("display","block")
+		}
+		else{
+			$(".extent_link").css("display","none")
+		}
+	}
+	function closeme(){
+		$("#right_collect div").css("display","none")
+	}
+</script>
+
